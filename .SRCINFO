@@ -1,0 +1,17 @@
+pkgbase = prax
+	pkgdesc = Rack proxy server for development
+	pkgver = 0.6.1
+	pkgrel = 1
+	url = https://github.com/ysbaddaden/prax.cr
+	arch = any
+	license = custom:CeCILL 2.1 License
+	makedepends = crystal
+	makedepends = git
+	depends = bash
+	optdepends = dnsmasq: forward .dev domains to prax
+	backup = etc/NetworkManager/dnsmasq.d/prax
+	source = https://github.com/ysbaddaden/prax.cr/archive/v0.6.1.zip
+	md5sums = 6b5d1bda255e5d37b5960e737df00022
+
+pkgname = prax
+
