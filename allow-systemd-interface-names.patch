@@ -1,0 +1,12 @@
+diff -aur prax.cr-0.6.1.pristine/libexec/prax-iptables prax.cr-0.6.1.new/libexec/prax-iptables
+--- prax.cr-0.6.1.pristine/libexec/prax-iptables	2016-10-13 15:34:41.000000000 +0200
++++ prax.cr-0.6.1.new/libexec/prax-iptables	2016-11-25 23:43:28.108280809 +0100
+@@ -5,7 +5,7 @@
+ 
+ HTTP_PORT=20559
+ HTTPS_PORT=20558
+-DEVICES=$(ls /sys/class/net | egrep '^(wlan|eth)[0-9]+')
++DEVICES=$(ls -l /sys/class/net/ | grep -v virtual | sed -n 's/.* \(\w*\) -> .*/\1/p')
+ 
+ case "$1" in
+   start)

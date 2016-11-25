@@ -1,0 +1,12 @@
+post_install() {
+  echo "For normal usage you will want to set up the port redirection rules for prax:"
+  echo
+  echo "    sudo systemctl enable prax-iptables"
+  echo "    sudo systemctl start prax-iptables"
+  echo
+  echo "You can have prax running for one user at a time."
+  echo
+  echo "    systemctl --user enable prax"
+  echo "    systemctl --user start prax"
+  echo
+}
