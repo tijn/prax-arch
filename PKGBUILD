@@ -1,8 +1,3 @@
-# This is an example PKGBUILD file. Use this as a start to creating your own,
-# and remove these comments. For more information, see 'man PKGBUILD'.
-# NOTE: Please fill out the license field for your package! If it is unknown,
-# then please put 'unknown'.
-
 # Maintainer: Tijn Schuurmans <tijnschuurmans+prax at gmail dot com>
 pkgname='prax'
 pkgver='0.6.1'
@@ -44,6 +39,6 @@ package() {
  install -D -m644 install/dnsmasq "${pkgdir}/etc/NetworkManager/dnsmasq.d/prax"
  install -D -m644 install/dnsmasq "${pkgdir}/etc/dnsmasq.d/prax"
  install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-#  install -D -m644 install/arch/prax-iptables.service "${pkgdir}/etc/systemd/system/prax-iptables.service"
-#  install -D -m644 install/arch/prax.service "$pkgdir"/usr/lib/systemd/user/prax.service
+ # install -D -m644 install/arch/prax-iptables.service "${pkgdir}/etc/systemd/system/prax-iptables.service"
+ # install -D -m644 install/arch/prax.service "$pkgdir"/usr/lib/systemd/user/prax.service
 }
