@@ -15,7 +15,7 @@ source=("https://github.com/ysbaddaden/$pkgname.cr/archive/v$pkgver.zip"
         "systemd-services.patch"
         "allow-systemd-interface-names.patch")
 md5sums=('6b5d1bda255e5d37b5960e737df00022'
-         '8ebb166feeed35158862001c11b35d2a'
+         '5d47fc4a9eef8f4774c426a7d48cce30'
          'f2351d77749ee9c949c237b79e3a02fe')
 
 prepare() {

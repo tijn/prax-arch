@@ -26,7 +26,7 @@ diff -aurN prax.cr-0.6.1.pristine/install/arch/prax.service prax.cr-0.6.1.new/in
 +[Service]
 +Type=simple
 +ExecStart=/usr/bin/prax start
-+ExecStop=/usr/bin/prax stop
++Restart=on-failure
 +WorkingDirectory=%h
 +
 +[Install]
